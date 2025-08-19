@@ -8,7 +8,7 @@ body {
     --color-primary-main: #913DFF;
     --color-primary-dark: #572599;
     --color-primary-xlight: #F9F5FF;
-    --primary-color-light: '#913DFF26';
+    --color-primary-light: #EFE2FF;
     --color-black-color: #202020
 }
 
@@ -31,7 +31,7 @@ body {
 .button--secondary {
     background-color: white;
     border: none;
-    border: 1px solid var(--color-primary-main);
+    border: 1px solid var(--color-primary-light);
     padding: 1rem 2.5rem;
     border-radius: .85rem;
     color: var(--color-primary-dark);
@@ -65,9 +65,27 @@ body {
     }
 }
 
+.title-secondary {
+    color: var(--color-black-color);
+    font-size: 1.5rem;
+
+    &>.main-title--primary-main {
+        color: var(--color-primary-dark);
+    }
+
+    &>.main-title--secondary-main {
+        color: var(--color-primary-dark)
+    }
+}
+
 .subtitle-main--medium {
     color: var(--color-black-color);
     font-weight: 400;
+}
+
+.background-primary {
+    width: 100%;
+    background-color: var(--color-primary-xlight);
 }
 
 /* Header */
@@ -128,13 +146,34 @@ body {
 }
 
 .header-badge {
-    border: 1px solid var(--color-primary-xlight);
+    border: 1px solid var(--color-primary-light);
     border-radius: 1rem;
     padding: .25rem 1rem;
 }
 
 .hero-img {
     max-width: 100%;
+}
+
+.trusted-section {
+    text-align: center;
+}
+
+.trusted-brands-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trusted-brands-box {
+    background-color: white;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    border-radius: .5rem;
+    border: 2px solid var(--color-primary-light);
 }
 
 /* 
@@ -166,6 +205,10 @@ body {
         font-size: 3.5rem;
     }
 
+    .title-secondary {
+        font-size: 2.25rem;
+    }
+
     .header-buttons-section {
         flex-direction: row;
         margin: 2rem 0 0 0;
@@ -179,8 +222,22 @@ body {
     .hero-section {
         display: flex;
         align-items: center;
+
         &>div {
             max-width: 50%;
+        }
+    }
+
+    .trusted-brands-section {
+        flex-direction: row;
+    }
+
+    .trusted-section {
+        display: flex;
+        text-align: start;
+        justify-content: space-between;
+        &>h3 {
+            max-width: 25rem;
         }
     }
 }

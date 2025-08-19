@@ -64,7 +64,7 @@ body {
 }
 
 .container-section {
-    max-width: 1366px;
+    max-width: 1366px !important;
     margin: 0 auto;
 }
 
@@ -84,6 +84,20 @@ body {
 .title-secondary {
     color: var(--color-black-color);
     font-size: 1.5rem;
+
+    &>.main-title--primary-main {
+        color: var(--color-primary-dark);
+    }
+
+    &>.main-title--secondary-main {
+        color: var(--color-primary-dark)
+    }
+}
+
+.title-tertiary {
+    color: var(--color-black-color);
+    font-size: 1rem;
+    font-weight: 700;
 
     &>.main-title--primary-main {
         color: var(--color-primary-dark);
@@ -140,6 +154,7 @@ body {
 .nav-links li a {
     text-decoration: none;
     color: inherit;
+    transition: all ease .3s;
 
     &:hover {
         color: var(--color-primary-main);
@@ -214,6 +229,7 @@ body {
     display: flex;
     place-content: center;
     margin: 0 .5rem 0 0;
+    background-color: white;
 }
 
 .stop-section {
@@ -228,6 +244,45 @@ body {
     &>div .stop-button {
         margin: 2rem auto 0 auto;
         width: 100%;
+    }
+}
+
+.smart-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &>h3 {
+        margin: 0 !important;
+        max-width: 35rem;
+    }
+
+    &>img {
+        margin: 3rem 0 0 0;
+    }
+}
+
+.smart-section-container-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 3rem auto 0 auto;
+}
+
+.smart-section-card {
+    display: flex;
+    flex-direction: column;
+
+    & .smart-section-card-icon {
+        background-color: white;
+        width: 2rem;
+        height: 2rem;
+        border: 2px solid var(--color-primary-light);
+        border-radius: 50%;
+        display: flex;
+        place-content: center;
     }
 }
 
@@ -262,6 +317,10 @@ body {
 
     .title-secondary {
         font-size: 2.25rem;
+    }
+
+    .title-tertiary {
+        font-size: 1.2rem;
     }
 
     .header-buttons-section {
@@ -323,4 +382,16 @@ body {
         }
 
     }
+
+    .smart-section-container-cards {
+        display: grid;
+        max-width: fit-content;
+        place-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        & div {
+            max-width: 23rem;
+        }
+    }
+
 }

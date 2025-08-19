@@ -1,6 +1,19 @@
 /* Globals */
+
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.section {
+    padding: 2rem 0 !important;
 }
 
 /* Vars */
@@ -22,6 +35,7 @@ body {
     color: white;
     font-weight: 700;
     transition: all ease .2s;
+    cursor: pointer;
 
     &:hover {
         opacity: 0.7;
@@ -37,9 +51,11 @@ body {
     color: var(--color-primary-dark);
     font-weight: 700;
     transition: all ease .2s;
+    cursor: pointer;
 
     &:hover {
         opacity: 0.7;
+        border: 1px solid var(--color-primary-dark);
     }
 }
 
@@ -124,6 +140,16 @@ body {
 .nav-links li a {
     text-decoration: none;
     color: inherit;
+
+    &:hover {
+        color: var(--color-primary-main);
+        font-weight: 700;
+    }
+}
+
+.nav-link--active {
+    font-weight: 700;
+    color: var(--color-primary-dark) !important;
 }
 
 .navMobileIcon {
@@ -176,6 +202,35 @@ body {
     border: 2px solid var(--color-primary-light);
 }
 
+.stop-list {
+    display: flex;
+    align-items: center;
+}
+
+.stop-list-icon {
+    border: 2px solid var(--color-primary-light);
+    border-radius: 50%;
+    padding: .5rem;
+    display: flex;
+    place-content: center;
+    margin: 0 .5rem 0 0;
+}
+
+.stop-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &>div h3 {
+        text-align: center;
+    }
+
+    &>div .stop-button {
+        margin: 2rem auto 0 auto;
+        width: 100%;
+    }
+}
+
 /* 
 @media (width <= 1250px) {
 ...
@@ -222,6 +277,7 @@ body {
     .hero-section {
         display: flex;
         align-items: center;
+        gap: 1rem;
 
         &>div {
             max-width: 50%;
@@ -236,8 +292,35 @@ body {
         display: flex;
         text-align: start;
         justify-content: space-between;
+
         &>h3 {
             max-width: 25rem;
         }
+    }
+
+    .stop-section {
+        flex-direction: row-reverse;
+        align-items: center;
+
+        &>div h3 {
+            text-align: start;
+            margin: 1rem 0 !important;
+            max-width: 30rem;
+        }
+
+        &>div .stop-button {
+            margin: 1.2rem auto 0 auto;
+            width: auto;
+        }
+
+        &>div {
+            width: 50%;
+            max-width: 50%;
+        }
+
+        .first-section {
+            padding: 0 0 0 2rem;
+        }
+
     }
 }

@@ -47,8 +47,9 @@ body {
     display: none !important;
 }
 
-.container {
+.container-section {
     max-width: 1366px;
+    margin: 0 auto;
 }
 
 .main-title {
@@ -132,6 +133,10 @@ body {
     padding: .25rem 1rem;
 }
 
+.hero-img {
+    max-width: 100%;
+}
+
 /* 
 @media (width <= 1250px) {
 ...
@@ -169,5 +174,13 @@ body {
     .header-badge-section {
         flex-direction: row;
         margin: 4rem 0 0 0
+    }
+
+    .hero-section {
+        display: flex;
+        align-items: center;
+        &>div {
+            max-width: 50%;
+        }
     }
 }

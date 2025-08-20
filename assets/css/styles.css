@@ -103,7 +103,7 @@ body {
 
 .title-tertiary {
     color: var(--color-black-color);
-    font-size: 1rem;
+    font-size: 1rem !important;
     font-weight: 700;
 
     &>.main-title--primary-main {
@@ -143,6 +143,18 @@ body {
     place-content: center;
     margin: 0 .5rem 0 0;
     background-color: var(--color-primary-xlight);
+    width: 1.15rem;
+    height: 1.15rem;
+}
+
+.list-icon-white {
+    border: 2px solid var(--color-primary-light);
+    border-radius: 50%;
+    padding: .65rem;
+    display: flex;
+    place-content: center;
+    margin: 0 .5rem 0 0;
+    background-color: white;
     width: 1.15rem;
     height: 1.15rem;
 }
@@ -514,6 +526,90 @@ body {
     gap: 4rem;
 }
 
+.footer-main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &>img {
+        width: 7rem;
+        height: 3rem;
+    }
+
+    &>.social-box {
+        display: flex;
+        justify-content: start;
+        gap: 0;
+    }
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+
+    & li,
+    a {
+        text-decoration: none;
+        color: var(--color-black-color);
+        margin: 1rem 0 0 0;
+
+        &:hover {
+            color: var(--color-primary-dark);
+            font-weight: bold;
+        }
+    }
+}
+
+.footer-suscription {
+    & input {
+        height: 2.75rem;
+        border-radius: .5rem;
+        border: 1px solid var(--color-primary-light);
+        padding: 0 0 0 1rem;
+        margin: 0 1rem 0 0;
+    }
+
+    & span {
+        color: var(--color-primary-main);
+        text-decoration: underline;
+    }
+
+    & p,
+    span {
+        font-size: .75rem;
+    }
+}
+
+.footer-secondary-section {
+    display: flex;
+    flex-direction: column;
+
+    & p {
+        padding: 0;
+        margin: .5rem 0 0;
+    }
+
+    &>p {
+        color: gray;
+    }
+
+    & div {
+        display: flex;
+        justify-content: space-between;
+
+        & p {
+            color: var(--color-primary-main);
+            text-decoration: underline;
+        }
+    }
+}
+
 /* 
 @media (width <= 1250px) {
 ...
@@ -658,4 +754,16 @@ body {
         width: 90% !important;
     }
 
+    .footer-main-content {
+        flex-direction: row;
+    }
+
+    .footer-secondary-section {
+        flex-direction: row;
+        justify-content: space-between;
+
+        & div {
+            gap: 1.5rem;
+        }
+    }
 }

@@ -367,6 +367,8 @@ body {
 .smart-section-card {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 
     & .smart-section-card-icon {
         background-color: white;
@@ -797,5 +799,10 @@ body {
 
     .desing-brand-cards-container{
         flex-direction: row;
+    }
+
+    .smart-section-card{
+        text-align: start;
+        align-items: start;
     }
 }

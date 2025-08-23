@@ -272,13 +272,41 @@ body {
     gap: 1rem;
 }
 
+.desgin-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h3 {
+        margin: 0;
+    }
+}
+
 .trusted-brands-box {
     background-color: white;
     width: 12rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
     border-radius: .5rem;
     border: 2px solid var(--color-primary-light);
+    padding: 1rem;
+    text-align: center;
+    gap: .5rem;
+    height: 9rem;
+
+    & p {
+        margin: 0;
+    }
+}
+
+.desing-brand-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .stop-list {
@@ -765,5 +793,9 @@ body {
         & div {
             gap: 1.5rem;
         }
+    }
+
+    .desing-brand-cards-container{
+        flex-direction: row;
     }
 }

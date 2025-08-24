@@ -16,3 +16,16 @@ navLinks.forEach(link => {
         link.classList.add('nav-link--active');
     })
 });
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+        }
+    });
+});
+
+document.querySelectorAll(".fade-in-down").forEach((el) => observer.observe(el));
+document.querySelectorAll(".fade-in-right").forEach((el) => observer.observe(el));
+document.querySelectorAll(".fade-in-left").forEach((el) => observer.observe(el));

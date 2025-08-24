@@ -297,7 +297,7 @@
             <h3 class="title-secondary">What Our Sellers Say</h3>
         </div>
 
-        <div class="review-slider-box">
+        <!-- <div class="review-slider-box">
             <div class="review-star-box">
                 <div class="stop-list-icon"><img src="./assets/icons/Star.svg" alt=""></div>
                 <div class="stop-list-icon"><img src="./assets/icons/Star.svg" alt=""></div>
@@ -329,6 +329,27 @@
                 </div>
 
                 <div class="stop-list-icon"><img src="./assets/icons/RightArrow.svg" alt=""></div>
+            </div>
+        </div> -->
+        <div class="review-slider-box">
+            <div class="review-star-box" id="stars-box"></div>
+        
+            <p class="title-tertiary" id="review-text"></p>
+        
+            <div class="review-card-user">
+                <div class="user-icon-box" id="user-initials"></div>
+                <div>
+                    <p class="title-tertiary" id="user-name"></p>
+                    <p id="user-company"></p>
+                </div>
+            </div>
+        
+            <div class="review-navigation">
+                <div class="stop-list-icon" id="prev-btn"><img src="./assets/icons/LeftArrow.svg" alt="Previous"></div>
+        
+                <div class="review-navigation-dots-container" id="dots-container"></div>
+        
+                <div class="stop-list-icon" id="next-btn"><img src="./assets/icons/RightArrow.svg" alt="Next"></div>
             </div>
         </div>
 
@@ -478,6 +499,7 @@
     </footer>
 
     <script src="./assets/js/index.js" defer></script>
+    <script src="./assets/js/slider.js" defer></script>
 </body>
 
 </html>

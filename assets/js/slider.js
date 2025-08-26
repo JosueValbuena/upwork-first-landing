@@ -37,7 +37,7 @@ const userInitials = document.getElementById('user-initials');
 const userName = document.getElementById('user-name');
 const userCompany = document.getElementById('user-company');
 const dotsContainer = document.getElementById('dots-container');
-const reviewBox = document.querySelector('.review-slider-box');
+const reviewBox = document.querySelector('.review-slider-box-content');
 
 function renderDots() {
     dotsContainer.innerHTML = "";
@@ -65,6 +65,8 @@ function renderStars(starCount) {
 
 function updateSlide() {
     reviewBox.classList.add('fade-out');
+    reviewBox.classList.remove('fade-in'); // Remove fade-in class to allow re-triggering the animation
+
     setTimeout(() => {
         const review = reviews[currentIndex];
         renderStars(review.stars);
@@ -73,9 +75,10 @@ function updateSlide() {
         userName.textContent = review.name;
         userCompany.textContent = review.company;
         renderDots();
+        
         reviewBox.classList.remove('fade-out');
         reviewBox.classList.add('fade-in');
-    }, 300);
+    }, 500); // Set a delay that is half of your animation duration (e.g., 0.5s for 1s animation)
 }
 
 document.getElementById('prev-btn').addEventListener('click', () => {
@@ -90,7 +93,7 @@ document.getElementById('next-btn').addEventListener('click', () => {
     resetAutoSlide();
 });
 
-let autoSlide = setInterval(nextSlide, 2500);
+let autoSlide = setInterval(nextSlide, 3000);
 
 function nextSlide() {
     currentIndex = (currentIndex + 1) % reviews.length;

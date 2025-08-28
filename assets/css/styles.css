@@ -13,7 +13,7 @@ body {
 }
 
 .section {
-    padding: 2rem 0 !important;
+    padding: 1.5rem 0 !important;
 }
 
 /* Vars */
@@ -166,7 +166,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 1.25rem;
+    gap: .75rem;
 
     & p,
     h3 {
@@ -189,26 +189,37 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    width: 100%;
+    max-width: 100%;
+    padding: .5rem 1rem 0 1rem;
 }
 
 .nav-menu {
     position: absolute;
     left: -30rem;
-    top: 3rem;
+    top: 5rem;
     transition: all ease .3s;
     background-color: white;
-    padding: 0 0 2rem 0;
+    padding: 2rem 0 2rem 0;
+    z-index: 100;
 }
 
 .mobile--visible {
     left: 0rem;
-    top: 3rem;
+    top: 5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    & li {
+        padding: 0 0 .75rem 0
+    }
+}
+
+.logo-icon {
+    object-fit: contain;
+    width: 11rem;
 }
 
 .nav-links {
@@ -306,6 +317,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1rem 0 0 0;
     gap: 1rem;
 }
 
@@ -418,11 +430,6 @@ body {
     padding: .5rem .75rem;
 }
 
-.review-section {
-    width: 80%;
-    text-align: center;
-}
-
 .review-slider-box {
     background-color: white;
     width: 100%;
@@ -432,7 +439,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 3rem 1rem;
-    margin: 3rem 0 0 0;
+    margin: 1rem 0 0 0;
     text-align: center;
     border-radius: .5rem;
     border: 1px solid var(--color-primary-light);
@@ -466,6 +473,15 @@ body {
     & p {
         margin: 0;
     }
+}
+
+.review-avatar {
+    max-width: 100%;
+    border-radius: 50%;
+    width: 5rem;
+    height: 4rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 .user-icon-box {
@@ -691,7 +707,7 @@ body {
     }
 
     .main-title {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .title-secondary {
@@ -704,6 +720,7 @@ body {
 
     .header-buttons-section {
         flex-direction: row;
+        justify-content: center;
         margin: 2rem 0 0 0;
     }
 
@@ -828,7 +845,7 @@ body {
         justify-content: center;
 
         & .trusted-brands-box {
-            width: 46%;
+            width: 30%;
             display: flex;
             flex-direction: row;
             justify-content: start;
@@ -839,5 +856,10 @@ body {
     .smart-section-card {
         text-align: start;
         align-items: center;
+    }
+
+    .footer-list {
+        display: flex;
+        gap: 1rem;
     }
 }

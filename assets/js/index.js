@@ -4,6 +4,12 @@ const navMobileIcon = document.querySelector('.navMobileIcon');
 const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 
+const closeMenu = () => {
+    navMenu.classList.remove('mobile--visible');
+    navIconMobileOpen.classList.remove('element--hide');
+    navIconMobileClose.classList.add('element--hide');
+};
+
 navMobileIcon.addEventListener('click', function () {
     navMenu.classList.toggle('mobile--visible');
     navIconMobileOpen.classList.toggle('element--hide');
@@ -14,7 +20,16 @@ navLinks.forEach(link => {
     link.addEventListener('click', function () {
         navLinks.forEach(link => link.classList.remove('nav-link--active'))
         link.classList.add('nav-link--active');
-    })
+        closeMenu()
+    });
+});
+
+window.addEventListener('click', function (e) {
+    if (!navMenu.classList.contains('mobile--visible')) return;
+    if (navMenu.contains(e.target)) return;
+    if (navMobileIcon.contains(e.target)) return;
+    closeMenu();
+    console.log(e.target, navMenu);
 });
 
 const observer = new IntersectionObserver((entries, observer) => {

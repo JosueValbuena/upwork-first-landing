@@ -841,6 +841,16 @@ body {
         }
     }
 
+    .frequenly-cards-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+        & div {
+            width: 44%;
+        }
+    }
+
     .frequenly-card {
         width: 90% !important;
     }

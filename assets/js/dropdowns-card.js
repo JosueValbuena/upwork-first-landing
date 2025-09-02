@@ -10,18 +10,52 @@ sellers. It analyzes competitor inventory, sell-through rates, and market demand
 for maximum profit—not just for the lowest price.`
     },
     {
+        title: 'Will it undercut my margins?',
+        message: `
+        No. You control your min/max price rules, ROI targets, and custom conditions. Price Optimizer Pro
+ensures your listings stay profitable while still winning the Buy Box when it makes sense.
+        `
+    },
+    {
+        title: 'Is it complicated to set up?',
+        message: `
+         Not at all. Setup takes just a few minutes—connect your Amazon account, import your listings, and
+apply your rules. Our guided onboarding walks you through step by step.
+        `
+    },
+    {
+        title: 'How much does it cost?',
+        message: `
+        Pricing is simple and flexible. See our Pricing Plans
+        `
+    },
+    {
+        title: 'Can I try it before committing?',
+        message: `
+        Yes. We offer a free trial so you can see how Price Optimizer Pro increases your sales and profits
+before choosing a plan.
+        `
+    },
+    {
+        title: 'What kind of sellers benefit most?',
+        message: `
+        Price Optimizer Pro is built for private-label, wholesale, and resellers who want smarter pricing—not
+just the lowest price—especially those managing large catalogs or multiple marketplaces
+        `
+    },
+    {
+        title: `Do I need technical skills to use it?`,
+        message: `
+        No. The interface is simple and intuitive. If you can manage your Amazon Seller Central account,
+you’ll have no trouble with Price Optimizer Pro.
+        `
+    },
+    {
         title: 'How is Price Optimizer Pro different from other repricers?',
         message: `
         Most repricers only race to the bottom. Price Optimizer Pro uses competitor inventory tracking and
 demand signals to know when you can raise prices as well as when to lower them, maximizing
 profitability while keeping sales velocity strong.
-        `
-    },
-    {
-        title: 'Will it undercut my margins?',
-        message: `
-        No. You control your min/max price rules, ROI targets, and custom conditions. Price Optimizer Pro
-ensures your listings stay profitable while still winning the Buy Box when it makes sense.
         `
     },
     {
@@ -45,40 +79,6 @@ marketplaces being added soon
 frequency or pause repricing rules at any time
 `
     },
-    {
-        title: 'Is it complicated to set up?',
-        message: `
-         Not at all. Setup takes just a few minutes—connect your Amazon account, import your listings, and
-apply your rules. Our guided onboarding walks you through step by step.
-        `
-    },
-    {
-        title: 'How much does it cost?',
-        message: `
-        Pricing is simple and flexible. See our Pricing Plans
-        `
-    },
-    {
-        title: 'Can I try it before committing?',
-        message: `
-        Yes. We offer a free trial so you can see how Price Optimizer Pro increases your sales and profits
-before choosing a plan.
-        `
-    },
-    {
-        title: `Do I need technical skills to use it?`,
-        message: `
-        No. The interface is simple and intuitive. If you can manage your Amazon Seller Central account,
-you’ll have no trouble with Price Optimizer Pro.
-        `
-    },
-    {
-        title: 'What kind of sellers benefit most?',
-        message: `
-        Price Optimizer Pro is built for private-label, wholesale, and resellers who want smarter pricing—not
-just the lowest price—especially those managing large catalogs or multiple marketplaces
-        `
-    }
 ];
 
 const renderCards = () => {
@@ -98,7 +98,7 @@ const renderCards = () => {
         cardMessage.textContent = newElement.message;
         cardMessage.classList.add('frequenly-card-message', 'hidden');
 
-        cardIcon.addEventListener('click', () => {
+        cardBox.addEventListener('click', () => {
             cardBox.classList.toggle('frequenly-card--expanded');
             cardMessage.classList.toggle('hidden');
             if (cardBox.classList.contains('frequenly-card--expanded')) {

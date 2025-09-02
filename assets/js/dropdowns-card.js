@@ -37,38 +37,16 @@ before choosing a plan.
         `
     },
     {
-        title: 'What kind of sellers benefit most?',
-        message: `
-        Price Optimizer Pro is built for private-label, wholesale, and resellers who want smarter pricing—not
-just the lowest price—especially those managing large catalogs or multiple marketplaces.
-        `
-    },
-    {
-        title: `Do I need technical skills to use it?`,
-        message: `
-        No. The interface is simple and intuitive. If you can manage your Amazon Seller Central account,
-you’ll have no trouble with Price Optimizer Pro.
-        `
-    },
-    {
         title: 'Will it help me win the Buy Box?',
         message: `
         Yes. Price Optimizer Pro is designed with Amazon’s Buy Box algorithm in mind. It balances competitive pricing, profit protection, and inventory signals to maximize your Buy Box share without unnecessary margin loss.
 `
     },
     {
-        title: 'How is Price Optimizer Pro different from other repricers?',
+        title: `Do I need technical skills to use it?`,
         message: `
-        Most repricers only race to the bottom. Price Optimizer Pro uses competitor inventory tracking and
-demand signals to know when you can raise prices as well as when to lower them, maximizing
-profitability while keeping sales velocity strong.
-        `
-    },
-    {
-        title: 'Does Price Optimizer Pro integrate with Amazon directly?',
-        message: `
-        Yes. Price Optimizer Pro connects through Amazon’s official Selling Partner API (SP-API), ensuring
-accurate real-time data and secure integration.
+        No. The interface is simple and intuitive. If you can manage your Amazon Seller Central account,
+you’ll have no trouble with Price Optimizer Pro.
         `
     },
     {
@@ -84,6 +62,28 @@ marketplaces being added soon.
         Prices update continuously, based on real-time competitor and sales data. You can also adjust the
 frequency or pause repricing rules at any time.
 `
+    },
+    {
+        title: 'What kind of sellers benefit most?',
+        message: `
+        Price Optimizer Pro is built for private-label, wholesale, and resellers who want smarter pricing—not
+just the lowest price—especially those managing large catalogs or multiple marketplaces.
+        `
+    },
+    {
+        title: 'Does Price Optimizer Pro integrate with Amazon directly?',
+        message: `
+        Yes. Price Optimizer Pro connects through Amazon’s official Selling Partner API (SP-API), ensuring
+accurate real-time data and secure integration.
+        `
+    },
+    {
+        title: 'How is Price Optimizer Pro different from other repricers?',
+        message: `
+        Most repricers only race to the bottom. Price Optimizer Pro uses competitor inventory tracking and
+demand signals to know when you can raise prices as well as when to lower them, maximizing
+profitability while keeping sales velocity strong.
+        `
     },
 ];
 

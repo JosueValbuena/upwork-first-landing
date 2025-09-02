@@ -4,24 +4,80 @@ const cardIconClose = './assets/icons/minus.svg';
 
 const data = [
     {
-        title: 'Is setup easy?',
-        message: 'Is setup easy?'
+        title: 'What is Price Optimizer Pro?',
+        message: `Price Optimizer Pro is an advanced Amazon repricing and competitor analytics tool built for serious
+sellers. It analyzes competitor inventory, sell-through rates, and market demand to optimize your prices
+for maximum profit—not just for the lowest price.`
     },
     {
-        title: 'Will it race my prices to the bottom?',
-        message: 'Is setup easy?'
+        title: 'How is Price Optimizer Pro different from other repricers?',
+        message: `
+        Most repricers only race to the bottom. Price Optimizer Pro uses competitor inventory tracking and
+demand signals to know when you can raise prices as well as when to lower them, maximizing
+profitability while keeping sales velocity strong.
+        `
     },
     {
-        title: 'Do I need to install anything?',
-        message: 'Is setup easy?'
+        title: 'Will it undercut my margins?',
+        message: `
+        No. You control your min/max price rules, ROI targets, and custom conditions. Price Optimizer Pro
+ensures your listings stay profitable while still winning the Buy Box when it makes sense.
+        `
     },
     {
-        title: 'Can I cancel anytime?',
-        message: 'No contracts or hidden fees.'
+        title: 'Does Price Optimizer Pro integrate with Amazon directly?',
+        message: `
+        Yes. Price Optimizer Pro connects through Amazon’s official Selling Partner API (SP-API), ensuring
+accurate real-time data and secure integration.
+        `
     },
     {
-        title: 'Is my Amazon account secure?',
-        message: 'Is setup easy?'
+        title: 'Which marketplaces does it support?',
+        message: `
+        Currently, Price Optimizer Pro supports Amazon US, Canada, Mexico, and Brazil, with additional
+marketplaces being added soon
+        `
+    },
+    {
+        title: 'How often does it update my prices?',
+        message: `
+        Prices update continuously, based on real-time competitor and sales data. You can also adjust the
+frequency or pause repricing rules at any time
+`
+    },
+    {
+        title: 'Is it complicated to set up?',
+        message: `
+         Not at all. Setup takes just a few minutes—connect your Amazon account, import your listings, and
+apply your rules. Our guided onboarding walks you through step by step.
+        `
+    },
+    {
+        title: 'How much does it cost?',
+        message: `
+        Pricing is simple and flexible. See our Pricing Plans
+        `
+    },
+    {
+        title: 'Can I try it before committing?',
+        message: `
+        Yes. We offer a free trial so you can see how Price Optimizer Pro increases your sales and profits
+before choosing a plan.
+        `
+    },
+    {
+        title: `Do I need technical skills to use it?`,
+        message: `
+        No. The interface is simple and intuitive. If you can manage your Amazon Seller Central account,
+you’ll have no trouble with Price Optimizer Pro.
+        `
+    },
+    {
+        title: 'What kind of sellers benefit most?',
+        message: `
+        Price Optimizer Pro is built for private-label, wholesale, and resellers who want smarter pricing—not
+just the lowest price—especially those managing large catalogs or multiple marketplaces
+        `
     }
 ];
 

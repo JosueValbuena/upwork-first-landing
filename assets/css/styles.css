@@ -836,9 +836,6 @@ body {
             max-width: 20rem;
         }
 
-        & div {
-            width: 50%;
-        }
     }
 
     .frequenly-cards-container {
@@ -847,7 +844,7 @@ body {
         justify-content: start;
         align-items: start;
         & div {
-            width: 44%;
+            width: 29%;
         }
     }
 

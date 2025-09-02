@@ -26,7 +26,7 @@ apply your rules. Our guided onboarding walks you through step by step.
     {
         title: 'How much does it cost?',
         message: `
-        Pricing is simple and flexible. See our Pricing Plans
+        Pricing is simple and flexible. <a href="#beta-section">See our Pricing Plans</a>.
         `
     },
     {
@@ -40,7 +40,7 @@ before choosing a plan.
         title: 'What kind of sellers benefit most?',
         message: `
         Price Optimizer Pro is built for private-label, wholesale, and resellers who want smarter pricing—not
-just the lowest price—especially those managing large catalogs or multiple marketplaces
+just the lowest price—especially those managing large catalogs or multiple marketplaces.
         `
     },
     {
@@ -49,6 +49,12 @@ just the lowest price—especially those managing large catalogs or multiple mar
         No. The interface is simple and intuitive. If you can manage your Amazon Seller Central account,
 you’ll have no trouble with Price Optimizer Pro.
         `
+    },
+    {
+        title: 'Will it help me win the Buy Box?',
+        message: `
+        Yes. Price Optimizer Pro is designed with Amazon’s Buy Box algorithm in mind. It balances competitive pricing, profit protection, and inventory signals to maximize your Buy Box share without unnecessary margin loss.
+`
     },
     {
         title: 'How is Price Optimizer Pro different from other repricers?',
@@ -69,14 +75,14 @@ accurate real-time data and secure integration.
         title: 'Which marketplaces does it support?',
         message: `
         Currently, Price Optimizer Pro supports Amazon US, Canada, Mexico, and Brazil, with additional
-marketplaces being added soon
+marketplaces being added soon.
         `
     },
     {
         title: 'How often does it update my prices?',
         message: `
         Prices update continuously, based on real-time competitor and sales data. You can also adjust the
-frequency or pause repricing rules at any time
+frequency or pause repricing rules at any time.
 `
     },
 ];
@@ -95,7 +101,7 @@ const renderCards = () => {
         cardTitle.classList.add('title-tertiary');
         cardIcon.src = cardIconOpen;
         cardIcon.classList.add('frequently-card-icon');
-        cardMessage.textContent = newElement.message;
+        cardMessage.innerHTML = newElement.message;
         cardMessage.classList.add('frequenly-card-message', 'hidden');
 
         cardBox.addEventListener('click', () => {
